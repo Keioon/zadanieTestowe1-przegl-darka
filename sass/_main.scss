@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.random {
+  padding: 5px 10px;
+  font-size: 16px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.random:hover {
+  background-color: wheat;
+  cursor: pointer;
+}
+
+.container {
+  width: 50%;
+  height: 70%;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+
+  div { 
+    flex-basis: 50%;
+
+    p {
+      width: 100%;
+      text-align: center;
+      opacity: 1;
+      transition: 0.3s;
+    }
+
+    p:hover {
+      cursor: pointer;
+      opacity: 0.3;
+    }
+  }
+
+  .oddNumbers {
+    background-color: green;
+    border-left: 2px solid black;
+    p {
+      color: white;
+    }
+  }
+
+  .evenNumbers {
+    background-color: royalblue;
+    p {
+      color: black;
+    }
+  }
+}
